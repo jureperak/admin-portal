@@ -2,7 +2,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { useMemo } from "react";
 import { DisputeModel } from "./dispute-models";
 import { PrimarySolidButton } from "@/components";
-import { InfiniteTable } from "@/features/table";
+// import { InfiniteTable } from "@/features/table";
 
 export function Disputes() {
     const columns = useMemo<ColumnDef<DisputeModel>[]>(
@@ -50,7 +50,7 @@ export function Disputes() {
                 </div>
             </div>
 
-            <InfiniteTable columns={columns} url="/disputes" />
+            {/* <InfiniteTable columns={columns} url="/disputes" /> */}
         </>
     );
 }

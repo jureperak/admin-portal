@@ -1,7 +1,7 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { useContext, useEffect, useMemo } from "react";
 import { MerchantModel } from "@/pages";
-import { InfiniteTableQuery } from "@/features/table";
+// import { InfiniteTableQuery } from "@/features/table";
 import { useNavigate } from "react-router-dom";
 import { PATHS } from "@/lib";
 import { MerchantContext } from "@/context";
@@ -47,14 +47,14 @@ export function Merchants() {
 
     return (
         <>
-            <InfiniteTableQuery
+            {/* <InfiniteTableQuery
                 columns={columns}
                 url="/merchants"
                 onRowClick={merchant => {
                     setSelectedMerchant({ merchant });
                     navigate(PATHS.MERCHANT.replace(":merchantId", merchant.id.toString()));
                 }}
-            />
+            /> */}
         </>
     );
 }
