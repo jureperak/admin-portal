@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jureperak.github.io/admin-portal",
   "scripts": {
     "local-development": "vite --open --port 8001",
     "local-staging": "vite --open --mode staging --port 8002",
